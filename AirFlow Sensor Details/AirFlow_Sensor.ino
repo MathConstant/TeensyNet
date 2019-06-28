@@ -7,7 +7,7 @@ void setup() {
   Serial.begin(9600);  //baudrate
   currentAirFlow = 0;
   previousAirFlow = 0;
-  attachInterrupt(0, pulse, RISING);  //DIGITAL Pin 2: Interrupt 0
+  attachInterrupt(0, pulse, RISING);  //DIGITAL Pin 0: Interrupt 0
 }
 void loop() {
   Serial.print("airFlow:");
